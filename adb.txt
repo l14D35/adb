@@ -1,1 +1,6 @@
+Wykład jest na stronie
+
 1. Metodyka Agile
+2. JIRA - narzędzie Agile - powtórz
+3. Scrum (planowanie) - poczytaj
+4. 
