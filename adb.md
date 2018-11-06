@@ -9,4 +9,4 @@
 ## 2. Wykład
 1. Logiczne grupowanie kodu
 2. Ify od nulla zaczynac
-3. 
+3. Unikac skomplikowanych testow zastepujac je wywolaniami funkcji
