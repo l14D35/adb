@@ -7,4 +7,6 @@
 4. To Do -> In Progress -> Code Review -> Closed
 5. JIRA - atlassian.com/software/jira
 ## 2. Wykład
-	1. 
+1. Logiczne grupowanie kodu
+2. Ify od nulla zaczynac
+3. 
