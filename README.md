@@ -1,1 +1,1 @@
-# ADB
+# Wspolne repozytorium na studia informatyczne
