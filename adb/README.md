@@ -10,3 +10,6 @@
 1. Logiczne grupowanie kodu
 2. Ify od nulla zaczynac
 3. Unikac skomplikowanych testow zastepujac je wywolaniami funkcji
+## 3. Wykład
+1. Dependencje Web, Security, Actuator, DevTools
+2. Spring init
