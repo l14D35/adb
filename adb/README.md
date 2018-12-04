@@ -13,3 +13,15 @@
 ## 3. Wykład
 1. Dependencje Web, Security, Actuator, DevTools
 2. Spring init
+## 4. Wykład
+1. SOAP
+2. API
+3. Kolejki
+4. Message Brokery
+5. REST
+6. API napisane wg zasad REST nazywane jest RESTful API
+7. REST - zasady
+8. CRUD - create, retrieve, update, delete
+9. JSON
+10. Monolit - jeden wielkiserwis
+11. Mikroserwisy <3
