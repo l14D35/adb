@@ -13,8 +13,8 @@ public class TextService {
 
     static {
         texts = new ArrayList<>();
-//        texts.add("Jakis text");
-//        texts.add("Jakis text2");
+        texts.add("Jakis text");
+        texts.add("Jakis text2");
     }
 
     public String addText(TextModel text) {

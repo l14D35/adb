@@ -2,7 +2,7 @@ package com.example.zadanie.model;
 
 public class TextModel {
 
-    private String text;
+    public String text;
 
     public String getText() {
         return text;
