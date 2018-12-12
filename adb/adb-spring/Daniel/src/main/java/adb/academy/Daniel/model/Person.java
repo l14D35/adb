@@ -9,7 +9,7 @@ public class Person {
 
 
 
-    Person(String firstName, String secondName, int birthday, int footSize) {
+    public Person(String firstName, String secondName, int birthday, int footSize) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.birthday = birthday;

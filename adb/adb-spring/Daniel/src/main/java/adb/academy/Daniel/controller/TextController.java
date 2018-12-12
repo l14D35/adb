@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/people")
@@ -16,27 +17,13 @@ public class TextController implements TextApi {
     private TextService textService;
 
     @Override
-    public String addFirstName(@RequestBody Person firstName) {
-        return textService.addFirstName(firstName);
+    public Person addPerson(@RequestBody Person p) {
+        return textService.addPerson(p);
     }
 
-    @Override
-    public String addSecondName(@RequestBody Person secondName) {
-        return textService.addSecondName(secondName);
-    }
 
     @Override
-    public int addBirthday(@RequestBody Person birthday) {
-        return textService.addBirthday(birthday);
-    }
-
-    @Override
-    public int addFootSize(@RequestBody Person footSize) {
-        return textService.addFootSize(footSize);
-    }
-
-    @Override
-    public ArrayList<ArrayList> getInfo() {
+    public List<Person> getInfo() {
         return textService.getInfo();
     }
 
