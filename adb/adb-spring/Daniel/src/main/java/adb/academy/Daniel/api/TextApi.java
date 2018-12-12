@@ -1,19 +1,21 @@
 package adb.academy.Daniel.api;
 
-import adb.academy.Daniel.model.TextModel;
+import adb.academy.Daniel.model.Person;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.ArrayList;
 
 @RestController
-@RequestMapping("/text")
+@RequestMapping("/people")
 public interface TextApi {
 
     @PostMapping
-    String addText(final TextModel text);
+    String addFirstName(final Person firstName);
+    String addSecondName(final Person secondName);
+    int addBirthday(final Person birthday);
+    int addFootSize(final Person footSize);
 
-    @GetMapping
-    List<String> getTexts();
-
+   @GetMapping
+   ArrayList<ArrayList> getInfo();
 
 }

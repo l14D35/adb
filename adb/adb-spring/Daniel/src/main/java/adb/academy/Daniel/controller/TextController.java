@@ -1,28 +1,43 @@
 package adb.academy.Daniel.controller;
 
 import adb.academy.Daniel.api.TextApi;
-import adb.academy.Daniel.model.TextModel;
+import adb.academy.Daniel.model.Person;
 import adb.academy.Daniel.service.TextService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.xml.ws.spi.WebServiceFeatureAnnotation;
-import java.util.List;
+import java.util.ArrayList;
 
 @RestController
-@RequestMapping("/text")
+@RequestMapping("/people")
 public class TextController implements TextApi {
 
     @Autowired
     private TextService textService;
 
     @Override
-    public String addText(TextModel text) {
-        return textService.addText(text);
+    public String addFirstName(@RequestBody Person firstName) {
+        return textService.addFirstName(firstName);
     }
 
     @Override
-    public List<String> getTexts() {
-        return textService.getTexts();
+    public String addSecondName(@RequestBody Person secondName) {
+        return textService.addSecondName(secondName);
     }
+
+    @Override
+    public int addBirthday(@RequestBody Person birthday) {
+        return textService.addBirthday(birthday);
+    }
+
+    @Override
+    public int addFootSize(@RequestBody Person footSize) {
+        return textService.addFootSize(footSize);
+    }
+
+    @Override
+    public ArrayList<ArrayList> getInfo() {
+        return textService.getInfo();
+    }
+
 }
