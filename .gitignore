@@ -6,3 +6,5 @@ mvnw
 *.gradle
 gradlew
 /gradle/
+*.pdf
+*.zip
