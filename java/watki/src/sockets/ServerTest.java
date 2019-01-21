@@ -22,6 +22,8 @@ public class ServerTest implements Runnable {
 
                 while (true) {
                     Socket client = server.accept();
+                    System.out.println(client.getInetAddress().getHostAddress());
+
 
                     InputStream inStream = client.getInputStream();
                     OutputStream outStream = client.getOutputStream();
@@ -52,7 +54,6 @@ public class ServerTest implements Runnable {
                             client.close();
                             server.close();
                             Thread.currentThread().interrupt();
-
                         }
                     }
 
