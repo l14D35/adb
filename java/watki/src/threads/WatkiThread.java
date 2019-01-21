@@ -1,3 +1,5 @@
+package threads;
+
 public class WatkiThread extends Thread {
 
     public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class WatkiThread extends Thread {
         Thread[] t = new Thread[SIZE];
 
         for (int i = 0; i < t.length; i++) {
-            t[i] = new WatkiThread();
+            t[i] = new threads.WatkiThread();
             t[i].start();
         }
 */

@@ -1,3 +1,5 @@
+package threads;
+
 public class WatkiPiotrekTest implements Runnable {
     private static final int SIZE = 6;
     private Thread w;
