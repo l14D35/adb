@@ -25,18 +25,18 @@ public class ServerTest implements Runnable {
                     System.out.println(client.getInetAddress().getHostAddress());
 
 
-                    InputStream inStream = client.getInputStream();
-                    OutputStream outStream = client.getOutputStream();
+                    InputStream inStream = client.getInputStream(); // wejscie in - to co robi klient - wyslanie informacji na server
+                    OutputStream outStream = client.getOutputStream(); //wyjscie - to co widzi klient
 
                     PrintWriter pw = new PrintWriter(outStream, true);
 
-                    pw.println("Nawiązano połączenie!");
+                    pw.println("Wysłano komunikat do klienta");
 
                     Scanner in = new Scanner(inStream);
 
                     boolean done = false;
                     while (!done && in.hasNextLine()) {
-                        String line = in.nextLine();
+                        String line = in.nextLine(); // wyslanie informacji na serwer
                         pw.println("Napisałeś: " + line);
                         if (line.trim().equals("komunikacja")) {
                             done = true;
@@ -46,6 +46,9 @@ public class ServerTest implements Runnable {
                                 Thread.sleep(12000);
                                 pw.println("Kończę pracę");
                                 client.close();
+                               // pw.server.close();
+                                Thread.currentThread().interrupt();
+
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
