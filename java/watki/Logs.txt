@@ -1,0 +1,15 @@
+
+Type of enemy: Archer
+Damage taken: 63
+Time of attack: 17:37
+
+
+Type of enemy: Mage
+Damage taken: 22
+Time of attack: 6:35
+
+
+Type of enemy: Mage
+Damage taken: 24
+Time of attack: 5:48
+
