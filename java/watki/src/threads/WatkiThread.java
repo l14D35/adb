@@ -11,8 +11,8 @@ public class WatkiThread extends Thread {
             t[i] = new threads.WatkiThread();
             t[i].start();
         }
-*/
 
+*/
         WatkiThread piotrek = new WatkiThread();
 
         System.out.println(piotrek.getClass().getSimpleName());

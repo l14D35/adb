@@ -7,7 +7,7 @@ public class ButtonListener extends JFrame {
     private JPanel buttonPanel;
 
     private ButtonListener() {
-        this.setSize(300,200);
+        this.setSize(500,300);
 
         JButton redButton = new JButton("Red");
         JButton greenButton = new JButton("Green");
